@@ -19,12 +19,12 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }} # Corrected
-          password: ${{ secrets.DOCKERHUB_TOKEN }}   # Corrected
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
         uses: docker/build-and-push-action@v5
         with:
           context: .
           push: true
-          tags: Sankavi16/todo-app-cicd:latest # Ensure this is your Docker Hub username/repo
+          tags: sankavi16/todo-app-cicd:latest # Ensure this matches your Docker Hub username/repo
