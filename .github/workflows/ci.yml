@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: sankavi16/todo-app-cicd:latest # Ensure this matches your Docker Hub username/repo
+          tags: sankavi16/todo-app-cicd:latest
