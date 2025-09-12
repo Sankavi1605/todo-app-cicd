@@ -37,4 +37,4 @@ jobs:
           context: .
           push: true
           # Tag the image with the username and repository name
-          tags: sankavi1605/todo-app:latest
+          tags: sankavi16/todo-app:latest
